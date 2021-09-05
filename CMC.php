@@ -5,7 +5,7 @@ WEB SCRAPING COINMARKETCAP WITH API
 REPORTING NEWS CRYPTOCURRENCY UPDATE
 https://github.com/caturmahdialfurqon
 */
-error_reporting(ERR);
+error_reporting(0);
 system('clear');
 function own($url, $ua, $data = null) {
     while (True){
@@ -22,14 +22,12 @@ function own($url, $ua, $data = null) {
             CURLOPT_HTTPHEADER => $ua,
             CURLOPT_SSL_VERIFYPEER => 1,
             CURLOPT_RETURNTRANSFER => 1,));
-            // CURLOPT_COOKIEJAR => 'cookie.txt',
-            // CURLOPT_COOKIEFILE => 'cookie.txt',));
         $run = curl_exec($ch);
         curl_close($ch);
         if ($run) {
             return $run;
         } else {
-            echo "\33[1;33mCek koneksi!\n";
+            echo "\33[1;33mcheck your connection!\n";
             sleep(2);
             continue;
         }
