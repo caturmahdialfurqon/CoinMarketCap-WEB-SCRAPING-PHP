@@ -1,6 +1,6 @@
 # CoinMarketCap SCRAPING DATA CRYPTOCURRENCY UPDATE WITH YOUR OWN API
 
-This script using by php programming language dan basic curl.
+This script using by php programming language and basic curl.
 
 this is very simple code, i just want to documentasion in my github repo. :D
 
